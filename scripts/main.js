@@ -1,5 +1,5 @@
 import { areaList } from "./ParkAreas.js"
-import { getGuests } from "./Guests.js"
+import { guestList } from "./Guests.js"
 
 const mainContainer = document.querySelector("#container")
 
@@ -11,7 +11,7 @@ const parkHTML = `
         </section>
     <section class="guestDetails>
         <h2> Guests</h2>
-        ${getGuests()}
+        ${guestList()}
         </section>
         </article>
         `
