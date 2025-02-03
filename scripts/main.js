@@ -9,7 +9,7 @@ const parkHTML = `
         <h2> Areas</h2>
         ${areaList()}
         </section>
-    <section class="guestDetails>
+    <section class="guestDetails">
         <h2> Guests</h2>
         ${guestList()}
         </section>

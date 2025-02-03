@@ -1,4 +1,4 @@
-import { getGuests } from "./database"
+import { getGuests } from "./database.js"
 const guests = getGuests()
 
 export const guestList = () => {
@@ -12,3 +12,4 @@ export const guestList = () => {
 
     return guestHTML
 }
+
