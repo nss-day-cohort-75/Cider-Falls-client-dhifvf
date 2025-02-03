@@ -6,13 +6,13 @@ import { getGuests } from "./database.js"
 export const areaList = () => {
     const areas = getAreas()
     
-    let parkHTML = '<div>'
+    let parkHTML = '<div class="areas">'
 
     // Loop over the areas & display each one
     for (const area of areas) {
         parkHTML += `
             <div class="area-item">
-                <h3 data-type="park" data-id="${area.id}">${area.name}</h3>
+                <h3 class="park-header" data-type="park" data-id="${area.id}">${area.name}</h3>
                 <ul>${getServicesForArea(area.id)}</ul>
             </div>
         `

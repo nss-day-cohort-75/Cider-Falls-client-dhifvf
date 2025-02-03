@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 100px;
+    height: 100px
+}
+
+.areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.area-item {
+    width: 40vw;
+    border-style: solid;
+    margin: 5px;
+    padding: 10px
+}
+
+.park-header{
+    text-align: center;
+}
