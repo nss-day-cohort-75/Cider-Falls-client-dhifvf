@@ -25,13 +25,13 @@ document.addEventListener(
             
             const areaId = itemClicked.dataset.id
             
-            let guestCount = []
+            let guestCount = 0
            
             const guests = getGuests();
 
             for(const guest of guests) {
                 if(parseInt(areaId) === guest.locationId){
-                    guestCount.push(guest)
+                    guestCount += 1
                 }
             }
             window.alert(`There are  ${guestCount.length} guests in this area`)    
