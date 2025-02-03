@@ -1,15 +1,17 @@
 import { getServices } from './database.js'
 
-const services = getServices(); // array of service objects
+// Function to get services for a given area
+export const getServicesForArea = (areaId) => {
+    const services = getServices(); // Get all services (array)
+    let areaServicesHTML = ''
 
-export const serviceList = () => {
-    let html = '<ul>'
-
-    // Generate the list of all services
     for (let service of services) {
-        html += `<li>${service.name}</li>`
+        // Check if the service is available in this area
+        if (service.areaId.includes(areaId)) {
+            areaServicesHTML += `<li>${service.name}</li>`
+        }
     }
+    areaServicesHTML += ''
 
-    html += '<ul>'
-    return html
+    return areaServicesHTML
 }

@@ -1,18 +1,27 @@
 import { getAreas } from "./database.js"
+import { getServicesForArea } from "./Services.js"
 import { getGuests } from "./database.js"
-const areas = getAreas()
 
+// Function to generate the HTML for the park areas
 export const areaList = () => {
-    let parkHTML = "<ul>"
+    const areas = getAreas()
+    
+    let parkHTML = '<div>'
 
+    // Loop over the areas & display each one
     for (const area of areas) {
-        parkHTML += `<li data-type="park" data-id="${area.id }">${area.name}</li>`
+        parkHTML += `
+            <div class="area-item">
+                <h3 data-type="park" data-id="${area.id}">${area.name}</h3>
+                <ul>${getServicesForArea(area.id)}</ul>
+            </div>
+        `
     }
 
-    parkHTML += "</ul>"
+    parkHTML += '</div>'
 
     return parkHTML
-}
+};
 
 document.addEventListener(
     "click",
@@ -34,7 +43,7 @@ document.addEventListener(
                     guestCount += 1
                 }
             }
-            window.alert(`There are  ${guestCount} guests in this area`)    
+            window.alert(`There are ${guestCount} guests in this area`)    
       }
     }
 )
