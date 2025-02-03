@@ -31,10 +31,10 @@ document.addEventListener(
 
             for(const guest of guests) {
                 if(parseInt(areaId) === guest.location){
-                    guestCount.push = 
+                    guestCount.push(guest)
                 }
             }
-            window.alert(`There are  ${guestCount} guests in this area`)    
+            window.alert(`There are  ${guestCount.length} guests in this area`)    
       }
     }
 )
