@@ -8,11 +8,11 @@ const mainContainer = document.querySelector("#container")
 const parkHTML = `
     <article class="article">
         <section class="areaDetails">
-            <h2>Areas</h2>
+            <h2 style="text-align: center">Areas</h2>
             ${areaList()}
         </section>
         <section class="guestDetails">
-            <h2>Guests</h2>
+            <h2 style="text-align: center">Guests</h2>
             <ul class="guest-list">${guestList()}</ul>
         </section>
     </article>
