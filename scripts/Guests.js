@@ -9,4 +9,5 @@ export const guestList = () => {
     }
 
     return guestHTML
-};
+}
+
