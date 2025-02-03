@@ -1,64 +1,84 @@
 const database = {
     guests: [{
         id: 1,
-        name: "Ethan Mercer"
+        name: "Ethan Mercer",
+        location: 1
     },{
         id: 2,
-        name: "Olivia Caldwell"
+        name: "Olivia Caldwell",
+        location: 2
     },{
         id: 3,
-        name: "Liam Sterling"
+        name: "Liam Sterling",
+        location: 3
     },{
         id: 4,
-        name: "Sophia Monroe"
+        name: "Sophia Monroe",
+        location: 4
     },{
         id: 5,
-        name: "Noah Harrington"
+        name: "Noah Harrington",
+        location: 5
     },{
         id: 6,
-        name: "Ava Sinclair"
+        name: "Ava Sinclair",
+        location: 6
     },{
         id: 7,
-        name: "Mason Whitaker"
+        name: "Mason Whitaker",
+        location: 7
     },{
         id: 8,
-        name: "Emma Winslow"
+        name: "Emma Winslow",
+        location: 8
     },{
         id: 9,
-        name: "Benjamin Carrington"
+        name: "Benjamin Carrington",
+        location: 1
     },{
         id: 10,
-        name: "Charlotte Davenport"
+        name: "Charlotte Davenport",
+        location: 1
     },{
         id: 11,
-        name: "Lucas Calloway"
+        name: "Lucas Calloway",
+        location: 3
     },{
         id: 12,
-        name: "Amelia Prescott"
+        name: "Amelia Prescott",
+        location: 3
     },{
         id: 13,
-        name: "Henry Thornton"
+        name: "Henry Thornton",
+        location: 6
     },{
         id: 14,
-        name: "Scarlett Ellington"
+        name: "Scarlett Ellington",
+        location: 5
     },{
         id: 15,
-        name: "Jack Holloway"
+        name: "Jack Holloway",
+        location: 1
     },{
         id: 16,
-        name: "Isabella Kensington"
+        name: "Isabella Kensington",
+        location: 7
     },{
         id: 17,
-        name: "Samuel Worthington"
+        name: "Samuel Worthington",
+        location: 1
     },{
         id: 18,
-        name: "Grace Abernathy"
+        name: "Grace Abernathy",
+        location: 2
     },{
         id: 19,
-        name: "Nathaniel Montgomery"
+        name: "Nathaniel Montgomery",
+        location: 3
     },{
         id: 20,
-        name: "Eleanor Bradford"
+        name: "Eleanor Bradford",
+        location: 6
     }],
     services: [{
         id: 1,
