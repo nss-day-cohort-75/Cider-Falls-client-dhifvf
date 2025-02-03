@@ -12,11 +12,9 @@ export const getServicesForArea = (areaId) => {
             areaServicesHTML += `<li data-type="service" data-name="${service.name}"  data-areaid="${service.areaId}" >${service.name}</li>`
         }
     }
-    areaServicesHTML += ''
 
     return areaServicesHTML
 }
-
 
 document.addEventListener(
     "click",
