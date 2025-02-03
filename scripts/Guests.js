@@ -8,6 +8,8 @@ export const guestList = () => {
         guestHTML += `<li>${guest.name}</li>`
     }
 
+    guestHTML += ''
+
     return guestHTML
 }
 
