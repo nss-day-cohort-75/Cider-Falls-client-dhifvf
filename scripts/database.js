@@ -2,83 +2,83 @@ const database = {
     guests: [{
         id: 1,
         name: "Ethan Mercer",
-        location: 1
+        locationId: 1
     },{
         id: 2,
         name: "Olivia Caldwell",
-        location: 2
+        locationId: 2
     },{
         id: 3,
         name: "Liam Sterling",
-        location: 3
+        locationId: 3
     },{
         id: 4,
         name: "Sophia Monroe",
-        location: 4
+        locationId: 4
     },{
         id: 5,
         name: "Noah Harrington",
-        location: 5
+        locationId: 5
     },{
         id: 6,
         name: "Ava Sinclair",
-        location: 6
+        locationId: 6
     },{
         id: 7,
         name: "Mason Whitaker",
-        location: 7
+        locationId: 1
     },{
         id: 8,
         name: "Emma Winslow",
-        location: 8
+        locationId: 5
     },{
         id: 9,
         name: "Benjamin Carrington",
-        location: 1
+        locationId: 1
     },{
         id: 10,
         name: "Charlotte Davenport",
-        location: 1
+        locationId: 1
     },{
         id: 11,
         name: "Lucas Calloway",
-        location: 3
+        locationId: 3
     },{
         id: 12,
         name: "Amelia Prescott",
-        location: 3
+        locationId: 3
     },{
         id: 13,
         name: "Henry Thornton",
-        location: 6
+        locationId: 6
     },{
         id: 14,
         name: "Scarlett Ellington",
-        location: 5
+        locationId: 5
     },{
         id: 15,
         name: "Jack Holloway",
-        location: 1
+        locationId: 1
     },{
         id: 16,
         name: "Isabella Kensington",
-        location: 7
+        locationId: 4
     },{
         id: 17,
         name: "Samuel Worthington",
-        location: 1
+        locationId: 1
     },{
         id: 18,
         name: "Grace Abernathy",
-        location: 2
+        locationId: 2
     },{
         id: 19,
         name: "Nathaniel Montgomery",
-        location: 3
+        locationId: 3
     },{
         id: 20,
         name: "Eleanor Bradford",
-        location: 6
+        locationId: 6
     }],
     services: [{
         id: 1,
