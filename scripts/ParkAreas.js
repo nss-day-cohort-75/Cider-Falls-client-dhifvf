@@ -1,14 +1,23 @@
 import { getAreas } from "./database.js"
-const areas = getAreas()
+import { getServicesForArea } from "./Services.js"
 
+// Function to generate the HTML for the park areas
 export const areaList = () => {
-    let parkHTML = "<ul>"
+    const areas = getAreas()
+    
+    let parkHTML = '<div>'
 
+    // Loop over the areas & display each one
     for (const area of areas) {
-        parkHTML += `<li data-type="park" data-id="${area.id }">${area.name}</li>`
+        parkHTML += `
+            <div class="area-item">
+                <h3>${area.name}</h3>
+                <ul>${getServicesForArea(area.id)}</ul>
+            </div>
+        `
     }
 
-    parkHTML += "</ul>"
+    parkHTML += '</div>'
 
     return parkHTML
-}
+};
