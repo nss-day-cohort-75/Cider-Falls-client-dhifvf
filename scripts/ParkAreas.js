@@ -30,7 +30,7 @@ document.addEventListener(
             const guests = getGuests();
 
             for(const guest of guests) {
-                if(parseInt(areaId) === guest.location){
+                if(parseInt(areaId) === guest.locationId){
                     guestCount.push(guest)
                 }
             }
